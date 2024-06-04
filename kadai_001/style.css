@@ -1,0 +1,254 @@
+* {
+  box-sizing: border-box;
+}
+/* PC、スマホ共通設定 */
+body {
+  font-family: "Noto sans Japanese",sans-serif;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+/* pc用設定 */
+@media screen and (min-width: 768px) {
+  /* pc用のスタイルを指定する */
+/* 横幅調整 */
+  body {
+    max-width: 1440px;
+    min-width: 960px;
+    margin: 0 auto 0 auto;
+  }
+
+  /* header装飾 */
+  #header-box {
+    width: 980px;
+    margin: 0 auto;
+    padding: 32px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    /* flex-wrap: wrap; */
+    font-size: 34px;
+  }
+
+  #header-box > p {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #000000;
+    padding: 3px, 19px, 3px, 19px;
+    margin: 10px;
+  }
+
+  #link {
+    margin: 18px;
+    
+  }
+  #link-about {
+    margin: auto;
+  }
+  #link-div a:link {
+    text-decoration: none;
+    color: #000000;
+  }
+  #link-div a:visited {
+    color: #000000;
+  }
+  #link-div a:hover {
+    text-decoration: underline;
+  }
+
+  #link-works {
+    margin: 0;
+  }
+
+
+  #main-visual{
+    width: 100%;
+    margin:0 auto;
+  }
+
+  #main-visual > img {
+    width: 100%;
+  }
+  /* about */
+  #about {
+    margin: 72.24px auto 0 auto;
+
+  }
+  .index-h1 {
+    font-size: 34px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  #about-contents {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    margin: 0;
+  }
+
+  #about-contents > img {
+    border-radius: 50%;
+  }
+
+
+  #about-contents > h2 {
+    font-size: 24px;
+  }
+
+  #about-text {
+    font-size: 18px;
+    margin-left: 14px;
+  }
+
+  #works {
+    margin: 87px auto 0 auto;
+  }
+
+  #works-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 16px;
+  }
+
+  .works-contents {
+    width: 25%;
+    margin: 10px auto;
+  }
+
+  .works-contents > img {
+    margin: 10px;
+  }
+
+  .works-contents > p {
+    font-size: 18px;
+    margin: 0;
+  }
+
+footer {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  }
+
+  footer > p {
+    font-size: 18px;
+    margin: 0 auto;
+
+  }
+
+}
+
+/* スマホ設定*/
+@media screen and (max-width: 767px) {
+  /* pc用のスタイルを指定する */
+  /* 横幅調整 */
+
+  body {
+    margin: 0;
+  }
+
+  header {
+    margin: 0;
+  }
+
+  #header-box {
+
+    margin: 10px;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  #header-box > p {
+    width: 172px;
+    height: 42px;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #000000;
+    padding: 3px, 19px, 3px, 19px;
+    margin: 10px;
+    font-size: 28px;
+
+  }
+
+  #link-div {
+    font-size: 18px;
+  }
+
+  #link-div a:link {
+    text-decoration: none;
+    color: #000000;
+  }
+  #link-div a:visited {
+    color: #000000;
+  }
+
+  #main-visual >img {
+    width: 100%;
+    margin: 10px auto;
+  }
+
+  #about {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+  #about-contents {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  #about-contents > img {
+    border-radius: 50%;
+  }
+
+  #works {
+    margin: 0;
+  }
+
+  #works >h1 {
+    text-align: center;
+    margin: 10px auto;
+  }
+
+  #works-box {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .works-contents {
+    margin: 0 auto;
+  }
+  
+  .works-contents > p {
+    margin: 5px auto 20px auto;
+    width: 100%;
+  }
+  
+  footer {
+    text-align: center;
+  }
+  footer > p {
+    margin-bottom: 5px;
+
+  }
+}
